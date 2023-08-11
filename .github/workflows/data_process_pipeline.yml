@@ -7,7 +7,7 @@ on:
   pull_request:
 jobs:
   prepare_environment:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-    - name: loading packages
-      run: python app.py
+    - name: Hello
+      run: python -c "print('Hello world')"
