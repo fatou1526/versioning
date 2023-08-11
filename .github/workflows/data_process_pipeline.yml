@@ -9,7 +9,13 @@ jobs:
   prepare_environment:
     runs-on: windows-latest
     steps:
+    - name: checkout repository
+      uses: actions/checkout@v2
+    - name: set up python
+      uses: actions/setup-python]v2
+      with:
+        python-version: 3.x
     - name: Hello
       run: python -c "print('Hello world')"
-    - name: loading packages
+    - name: Run Python Script
       run: python app.py
