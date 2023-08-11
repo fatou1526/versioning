@@ -1,11 +1,13 @@
 name: Csv Data Processing
-  on:
-    push:
-      paths:
-        - 'C:/Users/USER/Documents/Master2 DIT/Outil versioning/versioning/Crop_recommendation.csv'
-  jobs:
-    prepare_environment:
-      runs-on: ubuntu-latest
-      steps:
-      - name: loading packages
-        run: python app.py
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+  pull_request:
+jobs:
+  prepare_environment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: loading packages
+      run: python app.py
