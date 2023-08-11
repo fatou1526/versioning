@@ -12,4 +12,4 @@ jobs:
     - name: Hello
       run: python -c "print('Hello world')"
     - name: loading packages
-      run: python C:/Users/USER/Documents/Master2 DIT/Outil versioning/versioning/app.py
+      run: python app.py
