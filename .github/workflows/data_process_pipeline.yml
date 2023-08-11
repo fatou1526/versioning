@@ -12,4 +12,4 @@ jobs:
     - name: Hello
       run: python -c "print('Hello world')"
     - name: loading packages
-      run: python -c app.py
+      run: python app.py
