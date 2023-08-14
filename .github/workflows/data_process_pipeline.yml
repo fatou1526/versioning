@@ -13,6 +13,4 @@ jobs:
       run: python -c "print('Hello world')"
     - name: Run Python Script
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
         python versioning/app.py
