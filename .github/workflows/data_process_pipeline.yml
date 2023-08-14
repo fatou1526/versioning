@@ -19,4 +19,4 @@ jobs:
 
 
       - name: Run Python Script
-        run: python versioning/app.py
+        run: python app.py
