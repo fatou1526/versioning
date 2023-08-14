@@ -19,3 +19,4 @@ jobs:
       run: python -c "print('Hello world')"
     - name: Run Python Script
       run: python app.py
+      shell: bash
