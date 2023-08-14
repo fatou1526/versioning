@@ -5,12 +5,25 @@ on:
     branches:
     - main
   pull_request:
+
+    
 jobs:
   build:
     runs-on: windows-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11.x
+
+
       - name: Hello
         run: python -c "print('Hello world')"
+
+
       - name: Run Python Script
-        run: |
-          python versioning/app.py
+        run: python versioning/app.py
