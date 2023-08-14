@@ -11,9 +11,6 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: Set up Python
-        uses: python 3.11.x
-
       - name: Hello
         run: python -c "print('Hello world')"
 
