@@ -23,5 +23,5 @@ jobs:
           pip install numpy
           pip install matplotlib
 
-      - name: Run Python Script
-        run: python app.py
+      - name: Run Python module
+        run: python preprocess_module.py
