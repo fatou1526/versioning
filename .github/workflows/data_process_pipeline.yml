@@ -13,9 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Hello
-        run: python -c "print('Hello world')"
+      - name: Welcome
+        run: python -c "print('Hello world, welcome to this workflow')"
 
 
-      - name: Run Python Script
-        run: python app.py
+      - name: Run python script module
+        run: python preprocess_module.py
