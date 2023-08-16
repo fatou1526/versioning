@@ -22,6 +22,7 @@ jobs:
           pip install pandas
           pip install numpy
           pip install matplotlib
+          pip install scikit-learn
 
       - name: Run Python module
         run: python preprocess_module.py
