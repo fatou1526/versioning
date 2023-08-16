@@ -25,3 +25,6 @@ jobs:
 
       - name: Run Python module
         run: python preprocess_module.py
+
+      - name: Run Python Script
+        run: python app.py
