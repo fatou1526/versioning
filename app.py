@@ -4,7 +4,7 @@ from preprocess_module import preprocessing_outliers
 from preprocess_module import preprocessing_null
 
 # Loading data
-data = load_data('C:/Users/USER/Documents/Master2 DIT/Outil versioning/versioning/Crop_recommendation.csv')
+data = load_data('Crop_recommendation.csv')
 print(data.head())
 
 # Preprocessing data (duplicates, outliers, null )
