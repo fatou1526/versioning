@@ -29,3 +29,27 @@ jobs:
 
       - name: Run Python Script
         run: python app.py
+
+      - name: Upload artifact xtrain
+        uses: actions/upload-artifact@v2
+        with:
+          name: xtrain-artifact
+          path: X_train.zip
+        
+      - name: Upload artifact xtest
+        uses: actions/upload-artifact@v2
+        with:
+          name: xtest-artifact
+          path: X_test.zip
+
+      - name: Upload artifact ytrain
+        uses: actions/upload-artifact@v2
+        with:
+          name: ytrain-artifact
+          path: y_train.zip
+
+      - name: Upload artifact ytest
+        uses: actions/upload-artifact@v2
+        with:
+          name: ytest-artifact
+          path: y_test.zip
