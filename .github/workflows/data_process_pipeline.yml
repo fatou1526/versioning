@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       
       - name: Welcome
         run: python -c "print('Hello world, welcome to this workflow')"
